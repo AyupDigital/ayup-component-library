@@ -1,0 +1,64 @@
+.grid-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  padding: 0 $base-spacing;
+
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.grid-row {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  // Remove Wrap
+  &--no-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.grid-col {
+  background-color: green;
+  border: 0.5px dashed black;
+  box-sizing: border-box;
+  padding: 0 $base-spacing;
+  text-align: center;
+  width: 100%;
+
+  @include tablet {
+    // Column % Tablet
+    &--t {
+      @for $i from 1 to $total-columns + 1 {
+        &--#{$i} {
+          width: percentage($i / $total-columns);
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    // Column % Desktop
+    @for $i from 1 to $total-columns + 1 {
+      &--#{$i} {
+        width: percentage($i / $total-columns);
+      }
+    }
+  }
+}
+
+// Margin & padding
+@each $key, $value in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$key} {
+      margin-#{$side}: #{$value}rem;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$key} {
+      padding-#{$side}: #{$value}rem;
+    }
+  }
+}

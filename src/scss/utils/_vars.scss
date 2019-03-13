@@ -1,0 +1,30 @@
+// Breakpoints
+$small-devices-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$xl-screen-width: 1200px;
+
+$breakpoints: (768px, 992px, 1200px);
+
+// Grid
+$total-columns: 12;
+$base-spacing: 1rem;
+$base-font-size: 16px;
+// Adjust this to be the rem size you need
+$spaceamounts: (
+  8: 0.5,
+  16: 1,
+  24: 1.5,
+  32: 2,
+  40: 2.5,
+  48: 3,
+  56: 3.5,
+  64: 4,
+  72: 4.5,
+  80: 5,
+  88: 5.5,
+  96: 6,
+  104: 6.5,
+  112: 7,
+);
+$sides: (top, bottom, left, right);
