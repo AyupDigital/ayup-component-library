@@ -32,8 +32,6 @@
     }
   }
   &__text {
-    font-family: Apercu;
-    color: $mine-shaft;
     font-size: 0.75rem;
 
     @include tablet {
@@ -54,6 +52,10 @@
 .feature-blog {
   background-color: $jagged-ice;
   padding: map-get($spaceamounts, 32);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
   @include tablet {
     padding: map-get($spaceamounts, 64);
   }
@@ -97,6 +99,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
   }
 }
 
