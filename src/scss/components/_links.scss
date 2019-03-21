@@ -1,0 +1,32 @@
+.link {
+  font-family: Apercu;
+  font-size: $font-size-m;
+  color: $mine-shaft;
+  padding: 0.25rem 0;
+  display: inline-flex;
+  vertical-align: middle;
+
+  &--underline {
+    @include hover-grow($tradewind);
+  }
+  &--underline--alt {
+    @include hover-grow($mandy);
+  }
+
+  &--menu {
+    font-family: Apercu-Medium;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      .link--menu__hand {
+        animation: sway 1s infinite linear;
+        transform-origin: 50% 100% 0;
+      }
+    }
+
+    &__hand {
+      margin-left: 0.25rem;
+    }
+  }
+}

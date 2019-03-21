@@ -1,0 +1,50 @@
+.card {
+  background: $white;
+  border: 2px solid $wild-sand;
+  padding: map-get($spaceamounts, 16);
+
+  @include tablet {
+    padding: map-get($spaceamounts, 40);
+  }
+
+  &__quote {
+    font-family: Greycliff-Bold;
+    font-size: 1.25rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+
+    &--alt {
+      font-family: HK-Serif;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__name {
+    font-family: Apercu-Medium;
+    padding-top: map-get($spaceamounts, 40);
+    padding-bottom: map-get($spaceamounts, 8);
+    padding-top: map-get($spaceamounts, 16);
+
+    @include tablet {
+      padding-top: map-get($spaceamounts, 40);
+    }
+  }
+  &__text {
+    font-size: 0.75rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    padding-top: map-get($spaceamounts, 16);
+  }
+}

@@ -4,9 +4,21 @@
 @import "./utils/typography";
 @import "./utils/base";
 @import "./utils/grid";
-@import "./utils/buttons";
 @import "./utils/animations";
-@import "./utils/forms";
-@import "./utils/cards";
-@import "./utils/header-and-footer";
-@import "./utils/library";
+
+// Component library
+@import "./library";
+
+// Components
+
+@import "./components/buttons";
+@import "./components/cards";
+@import "./components/form";
+@import "./components/feature-blog";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/label";
+@import "./components/links";
+@import "./components/indent";
+@import "./components/input";
+@import "./components/secondary-blog";

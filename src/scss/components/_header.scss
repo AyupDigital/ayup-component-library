@@ -1,0 +1,58 @@
+.header {
+  background-color: $mine-shaft;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    order: 2;
+    // ie fix
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      order: inherit;
+    }
+    &:nth-child(1) {
+      padding-bottom: map-get($spaceamounts, 32);
+    }
+
+    @include tablet {
+      order: initial;
+
+      &:nth-child(1) {
+        padding-bottom: 0;
+      }
+    }
+
+    &--bottom {
+      padding-bottom: map-get($spaceamounts, 80);
+
+      @include tablet {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-family: GreycliffCF-ExtraBold;
+    font-size: 1.875rem;
+    color: $white;
+    padding-bottom: map-get($spaceamounts, 32);
+    text-align: center;
+  }
+
+  &__contact {
+    font-family: Apercu-Medium;
+    font-size: 1rem;
+    text-align: center;
+    color: $white;
+    transition: color 0.25s;
+    &:hover {
+      color: darken($color: $white, $amount: 25%);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    text-align: center;
+    padding: map-get($spaceamounts, 40);
+  }
+}

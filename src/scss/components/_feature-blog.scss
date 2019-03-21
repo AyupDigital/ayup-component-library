@@ -1,0 +1,53 @@
+.feature-blog {
+  background-color: $jagged-ice;
+  padding: map-get($spaceamounts, 32);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    padding: map-get($spaceamounts, 64);
+  }
+
+  &--alt {
+    background-color: $cosmos;
+  }
+
+  &__time {
+    opacity: 0.5;
+    font-family: Apercu-Medium;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    padding-bottom: map-get($spaceamounts, 24);
+  }
+
+  &__title {
+    font-family: GreycliffCF-Bold;
+    font-size: 2.25rem;
+    color: $mine-shaft;
+    text-align: left;
+    padding-bottom: map-get($spaceamounts, 24);
+  }
+
+  &__topic {
+    font-family: GreycliffCF-DemiBold;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    padding-bottom: map-get($spaceamounts, 24);
+  }
+
+  &__excerpt {
+    font-family: Apercu-Light;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    text-align: left;
+    padding-bottom: map-get($spaceamounts, 40);
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+}

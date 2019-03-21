@@ -1,0 +1,15 @@
+.indent {
+  padding: 0 $base-spacing;
+  border-left: 10px solid $wild-sand;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .link {
+    font-family: Apercu-Medium;
+
+    @include tablet {
+      font-family: Apercu;
+    }
+  }
+}
