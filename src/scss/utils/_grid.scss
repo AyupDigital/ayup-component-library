@@ -5,45 +5,45 @@
 
   &--fluid {
     max-width: 100%;
-    .grid-row {
-      margin: 0;
+  }
+
+  // Row
+  &__row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$base-spacing);
+
+    // Remove Wrap
+    &--no-wrap {
+      flex-wrap: nowrap;
     }
   }
-}
 
-.grid-row {
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 (-$base-spacing);
-  // Remove Wrap
-  &--no-wrap {
-    flex-wrap: nowrap;
-  }
-}
+  // Col
+  &__col {
+    box-sizing: border-box;
+    padding: 0 $base-spacing;
+    text-align: center;
+    width: 100%;
 
-.grid-col {
-  box-sizing: border-box;
-  padding: 0 $base-spacing;
-  text-align: center;
-  width: 100%;
+    @include tablet {
+      // Column % Tablet
+      &-t {
+        @for $i from 1 to $total-columns + 1 {
+          &--#{$i} {
+            width: percentage($i / $total-columns);
+          }
+        }
+      }
+    }
 
-  @include tablet {
-    // Column % Tablet
-    &--t {
+    @include desktop {
+      // Column % Desktop
       @for $i from 1 to $total-columns + 1 {
         &--#{$i} {
           width: percentage($i / $total-columns);
         }
-      }
-    }
-  }
-
-  @include desktop {
-    // Column % Desktop
-    @for $i from 1 to $total-columns + 1 {
-      &--#{$i} {
-        width: percentage($i / $total-columns);
       }
     }
   }

@@ -1,0 +1,133 @@
+// Style for library
+section {
+  padding-top: 100px;
+  margin-top: -40px;
+}
+
+.colour-block {
+  width: 100%;
+  color: $white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--text-colour {
+    background-color: $text-colour;
+  }
+
+  &--secondary-text-colour {
+    background-color: $secondary-text-colour;
+  }
+
+  &--light-text-colour {
+    background-color: $light-text-coloir;
+  }
+
+  &--link-one-colour {
+    background-color: $link-one;
+  }
+
+  &--link-two-colour {
+    background-color: $link-two;
+  }
+
+  &--link-three-colour {
+    background-color: $link-three;
+  }
+
+  &--link-four-colour {
+    background-color: $link-four;
+  }
+
+  &--button-text-colour {
+    background-color: $button-text;
+  }
+
+  &--colour-one {
+    background-color: $east-bay;
+  }
+
+  &--colour-two {
+    background-color: $tradewind;
+  }
+
+  &--colour-three {
+    background-color: $mandy;
+  }
+
+  &--colour-four {
+    background-color: $mona-lisa;
+  }
+
+  &--colour-five {
+    background-color: $vanilla;
+  }
+}
+
+.title {
+  text-align: center;
+}
+.section__title {
+  text-align: left;
+  font-size: 2rem;
+  margin: 0.75rem 0;
+}
+
+.section__subtitle {
+  text-align: left;
+  background-color: #d8d8d8;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.section__modifier {
+  text-align: left;
+  background-color: darken($color: #d8d8d8, $amount: 10%);
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.nav__item {
+  display: inline;
+  margin-left: 1rem;
+}
+nav {
+  ul {
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+}
+.page-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(216, 216, 216, 0.95);
+  z-index: 100;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  i {
+    font-size: 1.5rem;
+  }
+  .fix {
+    height: 40px;
+    margin: 0.5rem 1rem;
+  }
+}
+.contrast-bg {
+  background-color: $mine-shaft;
+}
+.content {
+  background-color: $wild-sand;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  text-align: center;
+  @include tablet {
+    font-size: 2.5rem;
+  }
+}

@@ -148,21 +148,21 @@ a {
   font-family: Greycliff-Medium;
 }
 
+p {
+  font-family: Apercu;
+  font-size: $font-size-m;
+}
+
 // TODO: Change colours once added.
 .body {
-  font-family: Apercu;
-  &--m {
-    font-size: $font-size-s;
-  }
   &--s {
     font-size: $font-size-s;
   }
 
   &--light {
     font-family: Apercu-Light;
-    &--m {
-      font-size: $font-size-s;
-    }
+    font-size: $font-size-m;
+
     &--s {
       font-size: $font-size-s;
     }
@@ -175,7 +175,7 @@ a {
 
   &--section {
     font-family: Apercu-Bold;
-    letter-spacing: 5.5px;
+    letter-spacing: 5.5;
     text-transform: uppercase;
     font-size: $font-size-s;
   }
@@ -188,6 +188,11 @@ a {
 
 // Lists
 li {
+  font-family: Greycliff-Demi-Bold;
+  font-size: $font-size-s;
+  padding-inline-start: map-get($spaceamounts, 8);
+  padding: map-get($spaceamounts, 8) 0;
+
   &:nth-child(1) {
     list-style-image: url(/assets/img/bullets/circle.svg);
   }
