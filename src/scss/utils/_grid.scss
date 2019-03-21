@@ -22,9 +22,7 @@
 
   // Col
   &__col {
-    box-sizing: border-box;
     padding: 0 $base-spacing;
-    text-align: center;
     width: 100%;
 
     @include tablet {

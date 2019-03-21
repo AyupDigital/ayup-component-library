@@ -190,8 +190,7 @@ p {
 li {
   font-family: Greycliff-Demi-Bold;
   font-size: $font-size-s;
-  padding-inline-start: map-get($spaceamounts, 8);
-  padding: map-get($spaceamounts, 8) 0;
+  padding: map-get($spaceamounts, 8) 0 0 map-get($spaceamounts, 8);
 
   &:nth-child(1) {
     list-style-image: url(/assets/img/bullets/circle.svg);
