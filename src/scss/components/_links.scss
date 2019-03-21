@@ -9,8 +9,13 @@
   &--underline {
     @include hover-grow($tradewind);
   }
+
   &--underline--alt {
     @include hover-grow($mandy);
+  }
+
+  &--white {
+    color: $white;
   }
 
   &--menu {

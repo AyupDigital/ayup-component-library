@@ -14,8 +14,8 @@
   }
 
   &__description {
-    font-family: GreycliffCF-ExtraBold;
-    font-size: 1.25rem;
+    font-family: Apercu;
+    font-size: $font-size-l;
     color: $white;
     padding-bottom: map-get($spaceamounts, 40);
 
@@ -62,6 +62,7 @@
     font-family: Apercu-Medium;
     font-size: 1rem;
     color: $white;
+    display: block;
 
     &--push {
       padding-bottom: map-get($spaceamounts, 40);
@@ -76,12 +77,20 @@
     small-devices {
       margin-bottom: map-get($spaceamounts, 0);
     }
-  }
 
+    &--icon {
+      &:hover {
+        .footer__icon {
+          color: darken($color: $white, $amount: 25%);
+        }
+      }
+    }
+  }
   &__icon {
     color: $white;
     font-size: 1.25rem;
   }
+
   &__img {
     display: none;
 
@@ -89,6 +98,7 @@
       display: block;
     }
   }
+
   &__bottom {
     display: flex;
     justify-content: center;
