@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Semicircle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="PL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-1061.000000, -2011.000000)" fill="#EA5171">
+            <path d="M1066.95602,2012.0117 C1072.52284,2012.27267 1076.95602,2016.86862 1076.95602,2022.5 L1076.95602,2023.2 C1076.95602,2028.61239 1072.56841,2033 1067.15602,2033 L1066.95602,2033 L1066.95602,2012.0117 Z" id="Semicircle" transform="translate(1071.956020, 2022.505848) rotate(45.000000) translate(-1071.956020, -2022.505848) "></path>
+        </g>
+    </g>
+</svg>

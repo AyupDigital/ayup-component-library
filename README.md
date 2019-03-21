@@ -1,6 +1,8 @@
-# Laravel mix boilerplate
+# Ayup component library
 
-This is going to be used as a base for front end projects. In this boilerplate it includes SASS with the SCSS syntax, source maps for the SCSS files, a hot reloading live server, copying of assets such as SVG's and the use of PostHTML with the 'includes' plugin allowing you to separate your HTML into partials for making maintainable code.
+This component libary is going to be used as a base for our Ayup Digital projects. Such as our [website](https://ayup.agency) and our [playbook](https://playbook.ayup.digital) this component libary contains everything from a flexbox based grid system to components such as cards, sign up forms and more.
+
+## To make changes to this library follow the below
 
 ## Getting Started
 

@@ -1,0 +1,46 @@
+.input {
+  font-size: $font-size-m;
+  border: 1px solid $silver-chalice;
+  border-radius: 1px;
+  font-family: Greycliff-Medium;
+  font-size: $font-size-s;
+  font-family: Apercu-Medium;
+  color: $silver-chalice;
+  outline-color: $mine-shaft;
+  outline-width: 2px;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  transition: border ease-in-out;
+  @include tablet {
+    font-size: $font-size-m;
+  }
+  &:focus,
+  :active {
+    outline-style: solid;
+  }
+  &--email {
+    margin-bottom: 1.5rem;
+    @include tablet {
+      margin-bottom: 2rem;
+    }
+  }
+}
+.label {
+  font-size: $font-size-s;
+  color: $mine-shaft;
+  font-family: Apercu-Medium;
+}
+
+.input__text-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input__text__button-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    align-items: flex-end;
+  }
+}

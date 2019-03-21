@@ -22,3 +22,50 @@
     @content;
   }
 }
+
+@mixin hover($colour) {
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $colour;
+    height: 4px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  &:hover:before,
+  :active::before,
+  :focus::before {
+    right: 0;
+  }
+}
+
+@mixin hover-grow($colour) {
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $colour;
+    height: 45%;
+    transform: translateY(80%);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  &:hover:before {
+    transform: translateY(0);
+  }
+}

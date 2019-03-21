@@ -1,0 +1,251 @@
+.card {
+  background: $white;
+  border: 2px solid $wild-sand;
+  padding: map-get($spaceamounts, 16);
+
+  @include tablet {
+    padding: map-get($spaceamounts, 40);
+  }
+
+  &__quote {
+    font-family: Greycliff-Bold;
+    font-size: 1.25rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+
+    &--alt {
+      font-family: HK-Serif;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__name {
+    font-family: Apercu-Medium;
+    padding-top: map-get($spaceamounts, 40);
+    padding-bottom: map-get($spaceamounts, 8);
+    padding-top: map-get($spaceamounts, 16);
+
+    @include tablet {
+      padding-top: map-get($spaceamounts, 40);
+    }
+  }
+  &__text {
+    font-family: Apercu;
+    color: $mine-shaft;
+    font-size: 0.75rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    padding-top: map-get($spaceamounts, 16);
+  }
+}
+
+.feature-blog {
+  background-color: $jagged-ice;
+  padding: map-get($spaceamounts, 32);
+  @include tablet {
+    padding: map-get($spaceamounts, 64);
+  }
+
+  &--alt {
+    background-color: $cosmos;
+  }
+
+  &__time {
+    opacity: 0.5;
+    font-family: Apercu-Medium;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    padding-bottom: map-get($spaceamounts, 24);
+  }
+
+  &__title {
+    font-family: GreycliffCF-Bold;
+    font-size: 2.25rem;
+    color: $mine-shaft;
+    text-align: left;
+    padding-bottom: map-get($spaceamounts, 24);
+  }
+
+  &__topic {
+    font-family: GreycliffCF-DemiBold;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    padding-bottom: map-get($spaceamounts, 24);
+  }
+
+  &__excerpt {
+    font-family: Apercu-Light;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    text-align: left;
+    padding-bottom: map-get($spaceamounts, 40);
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.secondary-blog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $white;
+  border: 1px solid $mine-shaft;
+  padding: map-get($spaceamounts, 32);
+  flex-wrap: wrap;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: map-get($spaceamounts, 64);
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    @include tablet {
+      flex: 1;
+    }
+  }
+
+  &__img {
+    padding-right: map-get($spaceamounts, 64);
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
+
+  &__time {
+    opacity: 0.5;
+    font-family: Apercu-Medium;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    padding-bottom: map-get($spaceamounts, 8);
+  }
+
+  &__title {
+    font-family: Apercu-Medium;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    text-align: left;
+    // ie fix
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      max-width: 700px;
+    }
+  }
+}
+
+.email-sign-up {
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: map-get($spaceamounts, 24);
+  @include tablet {
+    padding: map-get($spaceamounts, 64);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      max-width: 100%;
+    }
+
+    @include tablet {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__text-wrapper {
+    order: 2;
+    // ie fix
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      order: inherit;
+      max-width: 100%;
+    }
+
+    @include tablet {
+      order: initial;
+    }
+  }
+
+  &__title {
+    font-family: GreycliffCF-Bold;
+    font-size: 2.25rem;
+    color: $mine-shaft;
+    padding-bottom: map-get($spaceamounts, 40);
+
+    @include tablet {
+      padding-right: map-get($spaceamounts, 64);
+    }
+  }
+
+  &__text {
+    font-family: HKSerif-Regular;
+    font-size: 1.25rem;
+    color: $mine-shaft;
+    text-align: left;
+    padding-bottom: map-get($spaceamounts, 32);
+    // ie fix
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      max-width: 700px;
+    }
+
+    @include tablet {
+      padding-right: map-get($spaceamounts, 64);
+      padding-bottom: map-get($spaceamounts, 72);
+    }
+  }
+
+  &__form {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tablet {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__input-wrapper {
+    width: 100%;
+    padding-bottom: map-get($spaceamounts, 8);
+    @include tablet {
+      width: 49%;
+      padding-bottom: 0;
+    }
+  }
+
+  &__outer {
+    background-color: $tradewind;
+    padding: map-get($spaceamounts, 16) 0;
+    @include tablet {
+      padding: map-get($spaceamounts, 64);
+    }
+  }
+}

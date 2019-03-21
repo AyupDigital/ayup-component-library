@@ -1,0 +1,217 @@
+// Fonts
+
+// Greycliff
+@font-face {
+  font-family: Greycliff-Medium;
+  src: url(/assets/fonts/Greycliff-CF-Medium.otf);
+}
+@font-face {
+  font-family: Greycliff-Demi-Bold;
+  src: url(/assets/fonts/Greycliff-CF-Demi-Bold.otf);
+}
+@font-face {
+  font-family: Greycliff-Bold;
+  src: url(/assets/fonts/Greycliff-CF-Bold.otf);
+}
+
+// Apercu
+@font-face {
+  font-family: Apercu;
+  src: url(/assets/fonts/Apercu.otf);
+}
+@font-face {
+  font-family: Apercu-Light;
+  src: url(/assets/fonts/Apercu-Light.otf);
+}
+@font-face {
+  font-family: Apercu-Bold;
+  src: url(/assets/fonts/Apercu-Bold.otf);
+}
+@font-face {
+  font-family: Apercu-Medium;
+  src: url(/assets/fonts/Apercu-Medium.otf);
+}
+
+// HK-Serif
+@font-face {
+  font-family: HK-Serif;
+  src: url(/assets/fonts/HK-Serif.otf);
+}
+
+// Source code pro
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+// Ayup icons
+@font-face {
+  font-family: "ayup";
+  src: url("/assets/fonts/ayup-icons/ayup.eot?88895549");
+  src: url("/assets/fonts/ayup-icons/ayup.eot?88895549#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/ayup-icons/ayup.woff2?88895549") format("woff2"),
+    url("/assets/fonts/ayup-icons/ayup.woff?88895549") format("woff"),
+    url("/assets/fonts/ayup-icons/ayup.ttf?88895549") format("truetype"),
+    url("/assets/fonts/ayup-icons/ayup.svg?88895549#ayup") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ayup";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin: 0 0.25rem;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-loading:before {
+  content: "\e800";
+}
+.icon-read:before {
+  content: "\e801";
+}
+.icon-view:before {
+  content: "\e802";
+}
+.icon-values:before {
+  content: "\e803";
+}
+.icon-blog-open:before {
+  content: "\e804";
+}
+.icon-blog:before {
+  content: "\e805";
+}
+.icon-ok:before {
+  content: "\e806";
+}
+.icon-link:before {
+  content: "\e807";
+}
+.icon-mail:before {
+  content: "\e808";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github-circled:before {
+  content: "\f09b";
+}
+.icon-trello:before {
+  content: "\f181";
+}
+.icon-linkedin-squared:before {
+  content: "\f30c";
+}
+
+// Headings
+$heading-xl: 2.75rem;
+$heading-l: 2.25rem;
+$heading-m: 1.5rem;
+$heading-s: 1rem;
+
+// Font sizes
+$font-size-s: 1rem;
+$font-size-m: 1.125rem;
+$font-size-l: 1.25rem;
+
+h1 {
+  font-size: $heading-xl;
+  font-family: GreyCliff-Bold;
+}
+
+h2 {
+  font-size: $heading-l;
+  font-family: GreyCliff-Bold;
+}
+
+h3 {
+  font-size: $heading-m;
+  font-family: GreyCliff-Bold;
+}
+
+h4 {
+  font-size: $heading-s;
+  font-family: GreyCliff-Demi-Bold;
+}
+h5,
+h6,
+a {
+  font-family: Greycliff-Medium;
+}
+
+// TODO: Change colours once added.
+.body {
+  font-family: Apercu;
+  &--m {
+    font-size: $font-size-s;
+  }
+  &--s {
+    font-size: $font-size-s;
+  }
+
+  &--light {
+    font-family: Apercu-Light;
+    &--m {
+      font-size: $font-size-s;
+    }
+    &--s {
+      font-size: $font-size-s;
+    }
+  }
+
+  &--alt {
+    font-family: HK-Serif;
+    font-size: $font-size-s;
+  }
+
+  &--section {
+    font-family: Apercu-Bold;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+    font-size: $font-size-s;
+  }
+
+  &--caption {
+    font-family: Greycliff-Demi-Bold;
+    font-size: $font-size-s;
+  }
+}
+
+// Lists
+li {
+  &:nth-child(1) {
+    list-style-image: url(/assets/img/bullets/circle.svg);
+  }
+  &:nth-child(2) {
+    list-style-image: url(/assets/img/bullets/rectangle.svg);
+  }
+  &:nth-child(3) {
+    list-style-image: url(/assets/img/bullets/square.svg);
+  }
+  &:nth-child(4) {
+    list-style-image: url(/assets/img/bullets/triangle.svg);
+  }
+  &:nth-child(5) {
+    list-style-image: url(/assets/img/bullets/semicircle.svg);
+  }
+}
+
+.code {
+  font-family: "Source Code Pro", monospace;
+  background-color: #f4f4f4;
+  &--m {
+    font-size: $font-size-m;
+  }
+  &--s {
+    font-size: $font-size-m;
+  }
+}

@@ -1,0 +1,164 @@
+.header {
+  background-color: $mine-shaft;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include tablet {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  &__content {
+    order: 2;
+    // ie fix
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      order: inherit;
+    }
+    &:nth-child(1) {
+      padding-bottom: map-get($spaceamounts, 32);
+    }
+
+    @include tablet {
+      order: initial;
+
+      &:nth-child(1) {
+        padding-bottom: 0;
+      }
+    }
+
+    &--bottom {
+      padding-bottom: map-get($spaceamounts, 80);
+
+      @include tablet {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-family: GreycliffCF-ExtraBold;
+    font-size: 1.875rem;
+    color: $white;
+    padding-bottom: map-get($spaceamounts, 32);
+    text-align: center;
+  }
+
+  &__contact {
+    font-family: Apercu-Medium;
+    font-size: 1rem;
+    text-align: center;
+    color: $white;
+  }
+
+  &__img {
+    padding: map-get($spaceamounts, 40);
+  }
+}
+
+.footer {
+  background-color: $mine-shaft;
+  align-items: center;
+  padding: map-get($spaceamounts, 48);
+
+  @include tablet {
+    padding: map-get($spaceamounts, 112);
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  &__heading {
+    color: $white;
+  }
+
+  &__description {
+    font-family: GreycliffCF-ExtraBold;
+    font-size: 1.25rem;
+    color: $white;
+    padding-bottom: map-get($spaceamounts, 40);
+
+    @include small-devices {
+      padding-bottom: map-get($spaceamounts, 72);
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include small-devices {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__content {
+    text-align: left;
+  }
+
+  &__title {
+    font-family: GreycliffCF-ExtraBold;
+    font-size: 1.875rem;
+    color: $white;
+    padding-bottom: map-get($spaceamounts, 16);
+    text-align: left;
+
+    @include small-devices {
+      padding-bottom: map-get($spaceamounts, 32);
+    }
+
+    &--address {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__contact {
+    font-family: Apercu-Medium;
+    font-size: 1rem;
+    color: $white;
+
+    &--push {
+      padding-bottom: map-get($spaceamounts, 40);
+    }
+  }
+
+  &__link {
+    color: $white;
+    padding-top: map-get($spaceamounts, 16);
+    margin-bottom: map-get($spaceamounts, 40);
+
+    small-devices {
+      margin-bottom: map-get($spaceamounts, 0);
+    }
+  }
+
+  &__icon {
+    color: $white;
+    font-size: 1.25rem;
+  }
+  &__img {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: map-get($spaceamounts, 64);
+
+    @include tablet {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+  &__bottom-img {
+    margin: 0.5rem 1.5rem;
+  }
+}
