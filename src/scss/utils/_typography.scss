@@ -151,6 +151,7 @@ a {
 p {
   font-family: Apercu;
   font-size: $font-size-m;
+  color: $text-colour;
 }
 
 // TODO: Change colours once added.
@@ -183,6 +184,7 @@ p {
   &--caption {
     font-family: Greycliff-Demi-Bold;
     font-size: $font-size-s;
+    color: $secondary-text-colour;
   }
 }
 
@@ -209,13 +211,18 @@ li {
   }
 }
 
-.code {
+pre {
   font-family: "Source Code Pro", monospace;
+  font-size: $font-size-m;
+}
+code {
+  font-family: "Source Code Pro", monospace;
+  font-size: $font-size-m;
   background-color: #f4f4f4;
-  &--m {
-    font-size: $font-size-m;
-  }
+}
+
+.code {
   &--s {
-    font-size: $font-size-m;
+    font-size: $font-size-s;
   }
 }
