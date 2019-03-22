@@ -24,3 +24,12 @@ blockquote {
 a {
   text-decoration: none;
 }
+
+button {
+  outline-color: $mine-shaft;
+  outline-width: 2px;
+  &:focus,
+  :active {
+    outline-style: solid;
+  }
+}
